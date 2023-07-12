@@ -14,6 +14,8 @@
 		A1C755E32A5C2A09007278A4 /* ImplementUnitTestingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C755E22A5C2A09007278A4 /* ImplementUnitTestingTests.swift */; };
 		A1C755ED2A5C2A09007278A4 /* ImplementUnitTestingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C755EC2A5C2A09007278A4 /* ImplementUnitTestingUITests.swift */; };
 		A1C755EF2A5C2A09007278A4 /* ImplementUnitTestingUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C755EE2A5C2A09007278A4 /* ImplementUnitTestingUITestsLaunchTests.swift */; };
+		A1C755FC2A5C2A42007278A4 /* Checkout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C755FB2A5C2A42007278A4 /* Checkout.swift */; };
+		A1C755FE2A5D205B007278A4 /* SimpleMath.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C755FD2A5D205B007278A4 /* SimpleMath.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		A1C755E82A5C2A09007278A4 /* ImplementUnitTestingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImplementUnitTestingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1C755EC2A5C2A09007278A4 /* ImplementUnitTestingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImplementUnitTestingUITests.swift; sourceTree = "<group>"; };
 		A1C755EE2A5C2A09007278A4 /* ImplementUnitTestingUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImplementUnitTestingUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A1C755FB2A5C2A42007278A4 /* Checkout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Checkout.swift; sourceTree = "<group>"; };
+		A1C755FD2A5D205B007278A4 /* SimpleMath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleMath.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +100,8 @@
 			children = (
 				A1C755D12A5C2A08007278A4 /* ImplementUnitTestingApp.swift */,
 				A1C755D32A5C2A08007278A4 /* ContentView.swift */,
+				A1C755FB2A5C2A42007278A4 /* Checkout.swift */,
+				A1C755FD2A5D205B007278A4 /* SimpleMath.swift */,
 				A1C755D52A5C2A09007278A4 /* Assets.xcassets */,
 				A1C755D72A5C2A09007278A4 /* Preview Content */,
 			);
@@ -257,8 +263,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1C755FC2A5C2A42007278A4 /* Checkout.swift in Sources */,
 				A1C755D42A5C2A08007278A4 /* ContentView.swift in Sources */,
 				A1C755D22A5C2A08007278A4 /* ImplementUnitTestingApp.swift in Sources */,
+				A1C755FE2A5D205B007278A4 /* SimpleMath.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

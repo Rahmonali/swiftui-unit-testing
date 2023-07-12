@@ -9,28 +9,56 @@ import XCTest
 @testable import ImplementUnitTesting
 
 final class ImplementUnitTestingTests: XCTestCase {
-
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    
+    var simpleMath: SimpleMath!
+    
+    override func setUp() {
+        simpleMath = SimpleMath()
     }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    
+    override func tearDown() {
+        simpleMath = nil
     }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
+    
+    func test_calculateTotal_salesTaxTwentyPercent() {
+        // Given - Arrange
+        let items = [
+            CheckoutItem(name: "iPhone 14 Pro 256", price: 1300),
+            CheckoutItem(name: "MacBook Pro M3", price: 1700)
+        ]
+        let taxPercentage = 10
+        
+        // When - Act
+        let totalToPay = calculateTotal(items: items, localTaxPercent: taxPercentage)
+        
+        // Then - Assert
+        XCTAssertEqual(totalToPay, 3300)
+        
     }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    
+    func test_addTen_addTenWorks() {
+        // Given - Arrange
+        var expected: Int = 0
+        
+        // When - Act
+        expected = simpleMath.addTen(number: 10)
+        
+        // Then - Assert
+        XCTAssert(expected == 20, "This should be 20")
+        XCTAssertTrue(expected == 20)
+        XCTAssertEqual(expected, 20, "This should be 20")
     }
-
+    
+    func test_beSquare_beSquareSucceed() {
+        // Given - Arrange
+        var expected: Int = 0
+        
+        // When - Act
+        expected = simpleMath.beSquare(9)
+        
+        // Then - Assert
+        XCTAssertEqual(expected, 81)
+    }
+    
+    
 }
